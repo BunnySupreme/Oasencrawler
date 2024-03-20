@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1709491819 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\main.cpp
+	"PLAYER.h"
+	"GameWorld.h"
+	"Challenge.h"
+	"GameControls.h"
+	"Enemy.h"
+	"Game.h"
+	<time.h>
+	<stdlib.h>
+
+1709496045 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\player.cpp
+	"Player.h"
+	<iostream>
+	"Config.h"
+
+1709496037 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\player.h
+	<stdlib.h>
+	"Config.h"
+
+1709500604 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gameworld.cpp
+	"GameWorld.h"
+	<stdlib.h>
+	<iostream>
+
+1709552095 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gameworld.h
+	"Config.h"
+
+1709494292 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\challenge.cpp
+	"Challenge.h"
+	<stdlib.h>
+	<iostream>
+	"Config.h"
+
+1709494292 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\challenge.h
+	"Config.h"
+
+1709494395 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gamecontrols.cpp
+	"GameControls.h"
+	<iostream>
+	"Config.h"
+
+1709494292 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gamecontrols.h
+	<string.h>
+
+1709494910 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\enemy.cpp
+	"Enemy.h"
+	<stdlib.h>
+	<iostream>
+	"Config.h"
+
+1709494675 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\enemy.h
+
+1709063201 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\enemies.cpp
+	"Enemies.h"
+
+1709063171 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\enemies.h
+
+1709068283 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gameother.cpp
+	"GameOther.h"
+	<time.h>
+	<stdlib.h>
+
+1709068316 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gameother.h
+	<iostream>
+
+1709562524 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\game.h
+	"PLAYER.h"
+	"GameWorld.h"
+	"Challenge.h"
+	"GameControls.h"
+	"Enemy.h"
+	<iostream>
+
+1709562507 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\game.cpp
+	"Game.h"
+	<time.h>
+	<stdlib.h>
+	"Config.h"
+
+1709495292 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\config.h
+
