@@ -8,6 +8,7 @@
 
 GameWorld::GameWorld()
 {
+    createMap(0, 0);
     //couldn't draw Game World already because dependent on Player Coordinates, so done in Game constructor
 }
 
