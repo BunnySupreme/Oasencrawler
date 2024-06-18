@@ -6,7 +6,7 @@
 class GameOther
 {
     public:
-        GameOther(int difficulty_level);
+        explicit GameOther(int difficulty_level);
         void setSeed();
         void gameMessage(std::string game_message);
         void errorMessage(std::string error_message);
