@@ -97,7 +97,6 @@ void Enemy::moveEnemyRandomly(int map_size)
 {
     int map_limit = map_size-1;
 
-
     while(1)
     {
         int random_direction = rand() % 4;
@@ -117,7 +116,6 @@ void Enemy::moveEnemyRandomly(int map_size)
             enemy_y_coordinate_--;
             break;
         }
-
         if (enemy_x_coordinate_ > map_limit)
         {
             enemy_x_coordinate_--;
@@ -138,7 +136,6 @@ void Enemy::moveEnemyRandomly(int map_size)
             enemy_y_coordinate_++;
             need_to_try_again = true;
         }
-
         if (need_to_try_again == false)
         {
             break;
