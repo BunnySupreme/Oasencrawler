@@ -11,6 +11,8 @@ GameWorld::GameWorld()
     //couldn't draw Game World already because dependent on Player Coordinates, so done in Game constructor
 }
 
+
+
 //Getters
 int GameWorld::getNumberOfRelics() const
 {

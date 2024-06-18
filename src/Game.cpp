@@ -4,6 +4,8 @@
 
 #include "Config.h"
 
+#define TEST 0
+
 Game::Game(int difficulty_level)
 {
     if (difficulty_level < 0)
@@ -16,6 +18,7 @@ Game::Game(int difficulty_level)
     gameMessage(START_GAME_MESSAGE);
     player_.assignStatsRandomly();
 }
+
 
 
 //Getter
@@ -34,42 +37,43 @@ void Game::renderGame()
 
 }
 
-void Game::movePlayer()
+char Game::getInput()
 {
-    while(1)
+    controls_.askInput();
+    return controls_.getInput();
+}
+
+
+void Game::movePlayer(char input)
+{
+
+    if (gameworld_.hitWall(input, player_.getXCoordinate(), player_.getYCoordinate()))
     {
-        controls_.askInput();
-        if (gameworld_.hitWall(controls_.getInput(), player_.getXCoordinate(), player_.getYCoordinate()))
-        {
-            errorMessage(ERROR_MESSAGE_HIT_WALL);
-            //repeat input
-            renderGame();//Show map and status again
-            continue;
-        }
-        switch(controls_.getInput())
-        {
-            case NORTH:
-                player_.moveNorth();
-                break;
-            case SOUTH:
-                player_.moveSouth();
-                break;
-            case EAST:
-                player_.moveEast();
-                break;
-            case WEST:
-                player_.moveWest();
-                break;
-            default:
-                errorMessage(ERROR_MESSAGE_WRONG_INPUT);
-                renderGame();//Show map and status again
-                continue;
 
-        }
-
-        break; //no issues, can break out of control loop
+        throw std::out_of_range("Hit a wall");
 
     }
+    switch(input)
+    {
+        case NORTH:
+            player_.moveNorth();
+            break;
+        case SOUTH:
+            player_.moveSouth();
+            break;
+        case EAST:
+            player_.moveEast();
+            break;
+        case WEST:
+            player_.moveWest();
+            break;
+        default:
+            errorMessage(ERROR_MESSAGE_WRONG_INPUT);
+            renderGame();//Show map and status again
+
+    }
+
+
 }
 
 void Game::checkEvent()
@@ -192,6 +196,43 @@ bool Game::isLevelWon() const
     return level_won_;
 }
 
+int Game::getPlayerXCoordinate() const
+{
+    return player_.getXCoordinate();
+}
+
+int Game::getPlayerYCoordinate() const
+{
+    return player_.getYCoordinate();
+}
+
+
+int Game::getMapSize() const
+{
+    return gameworld_.getMapSize();
+}
+
+int Game::getEnemyXCoordinate() const
+{
+    return enemy_.getEnemyXCoordinate();
+}
+
+int Game::getEnemyYCoordinate() const
+{
+    return enemy_.getEnemyYCoordinate();
+}
+
+int Game::getPlayerHealth() const
+{
+    return player_.getCurrentHealthPoints();
+}
+
+int Game::getPlayerItems(int item_type) const
+{
+    return player_.getCurrentItems(item_type);
+}
+
+
 void Game::enemyCaptured()
 {
     gameworld_.printMap(enemy_.getEnemyXCoordinate(), enemy_.getEnemyYCoordinate());
@@ -200,3 +241,7 @@ void Game::enemyCaptured()
     game_over_ = true;
 }
 
+void Game::playerLosesHealth()
+{
+    player_--;
+}

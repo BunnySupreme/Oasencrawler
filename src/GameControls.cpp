@@ -6,7 +6,7 @@
 #define INPUT_MESSAGE "\nINPUT OPTIONS:\n(n) NORTH, (s) SOUTH, (e) EAST, (w) WEST \n\nPlease input, where you want to go next\n"
 #define ERROR_MESSAGE_TOO_LONG "\nYou may only input one character! Try again.\n"
 
-
+#define TEST 1
 
 GameControls::GameControls()
 {
@@ -23,8 +23,12 @@ void GameControls::askInput()
         std::getline(std::cin, input);
         if (input.size() > 1)
         {
+            #if TEST
             std::cout << TEXT_SEPERATOR;
             std::cout << ERROR_MESSAGE_TOO_LONG;
+            #else
+            throw std::invalid_argument("Input is too long");
+            #endif
         }
         else
         {

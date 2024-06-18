@@ -50,6 +50,7 @@
 		<Unit filename="src/GameControls.cpp" />
 		<Unit filename="src/GameWorld.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="vendor/doctest/doctest.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

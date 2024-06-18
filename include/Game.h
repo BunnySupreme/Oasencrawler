@@ -20,13 +20,23 @@ class Game
         int getDifficultyLevel() const;
         //other functions
         void renderGame();
-        void movePlayer();
+        void movePlayer(char input);
         void checkEvent();
         void enemyTurn();
         void startOfRoundHouseKeeping();
         void nextScreen();
         bool isGameOver() const;
         bool isLevelWon() const;
+        //new functions for testing
+        int getPlayerXCoordinate() const;
+        int getPlayerYCoordinate() const;
+        int getEnemyXCoordinate() const;
+        int getEnemyYCoordinate() const;
+        int getMapSize() const;
+        int getPlayerHealth() const;
+        int getPlayerItems(int item_type) const;
+        char getInput();
+        void playerLosesHealth();
 
 
     private:

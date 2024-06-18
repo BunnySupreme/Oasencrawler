@@ -209,3 +209,24 @@ void Player::testItemType(int item_type)
         std::cout << "Error in Player Function! Item types out of bound.";
     }
 }
+
+
+void Player::operator++()
+{
+    gainHealthPoint();
+}
+
+void Player::operator++(int)
+{
+    gainHealthPoint();
+}
+
+void Player::operator--()
+{
+    loseHealthPoint();
+}
+
+void Player::operator--(int) {
+    loseHealthPoint();
+}
+

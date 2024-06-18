@@ -1,3 +1,5 @@
+
+
 #ifndef CONFIG_H_INCLUDED
 #define CONFIG_H_INCLUDED
 
@@ -42,6 +44,8 @@
 //Enemy
 #define FIRST_ENEMY_STARTING_X_COORDINATE 4
 #define FIRST_ENEMY_STARTING_Y_COORDINATE 4
+
+
 
 //Challenges
 #define TYPES_OF_CHALLENGES 3

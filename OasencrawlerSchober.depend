@@ -1,55 +1,59 @@
 # depslib dependency file v1.0
-1709491819 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\main.cpp
+1716809005 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\main.cpp
 	"PLAYER.h"
 	"GameWorld.h"
 	"Challenge.h"
 	"GameControls.h"
 	"Enemy.h"
 	"Game.h"
+	"Config.h"
 	<time.h>
 	<stdlib.h>
+	<vector>
+	<utility>
+	"vendor/doctest/doctest.h"
 
-1709496045 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\player.cpp
+1716641379 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\player.cpp
 	"Player.h"
 	<iostream>
 	"Config.h"
 
-1709496037 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\player.h
+1716641379 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\player.h
 	<stdlib.h>
 	"Config.h"
 
-1709500604 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gameworld.cpp
+1716802057 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gameworld.cpp
 	"GameWorld.h"
 	<stdlib.h>
 	<iostream>
 
-1709552095 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gameworld.h
+1716802057 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gameworld.h
 	"Config.h"
 
-1709494292 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\challenge.cpp
+1709497892 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\challenge.cpp
 	"Challenge.h"
 	<stdlib.h>
 	<iostream>
 	"Config.h"
 
-1709494292 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\challenge.h
+1709497892 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\challenge.h
 	"Config.h"
 
-1709494395 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gamecontrols.cpp
+1716801301 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\gamecontrols.cpp
 	"GameControls.h"
 	<iostream>
 	"Config.h"
 
-1709494292 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gamecontrols.h
+1709497892 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gamecontrols.h
 	<string.h>
 
-1709494910 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\enemy.cpp
+1709498510 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\enemy.cpp
 	"Enemy.h"
 	<stdlib.h>
 	<iostream>
 	"Config.h"
 
-1709494675 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\enemy.h
+1709498275 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\enemy.h
 
 1709063201 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\enemies.cpp
 	"Enemies.h"
@@ -64,7 +68,7 @@
 1709068316 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\gameother.h
 	<iostream>
 
-1709562524 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\game.h
+1716801950 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\game.h
 	"PLAYER.h"
 	"GameWorld.h"
 	"Challenge.h"
@@ -72,11 +76,56 @@
 	"Enemy.h"
 	<iostream>
 
-1709562507 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\game.cpp
+1716808993 source:c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\src\game.cpp
 	"Game.h"
 	<time.h>
 	<stdlib.h>
 	"Config.h"
 
-1709495292 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\config.h
+1716801235 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\include\config.h
+
+1715000314 c:\users\carto\documents\informatik\programmieren\oasencrawlerschober\vendor\doctest\doctest.h
+	<signal.h>
+	<ciso646>
+	<cstddef>
+	<ostream>
+	<istream>
+	<type_traits>
+	"doctest_fwd.h"
+	<ctime>
+	<cmath>
+	<climits>
+	<math.h>
+	<new>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<limits>
+	<utility>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<vector>
+	<atomic>
+	<mutex>
+	<set>
+	<map>
+	<unordered_set>
+	<exception>
+	<stdexcept>
+	<csignal>
+	<cfloat>
+	<cctype>
+	<cstdint>
+	<string>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<AfxWin.h>
+	<windows.h>
+	<io.h>
+	<sys/time.h>
+	<unistd.h>
 

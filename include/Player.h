@@ -33,6 +33,13 @@ class Player
         void loseItem(int item_type);
         void printStatus();
         void assignStatsRandomly();
+        //operator overload
+        void operator++();
+        void operator++(int);
+        void operator--();  //prefix decrement
+        void operator--(int); //for postfix, add seperate function with int parameter
+
+
 
 
     protected:
