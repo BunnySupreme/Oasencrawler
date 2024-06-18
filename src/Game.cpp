@@ -243,5 +243,5 @@ void Game::enemyCaptured()
 
 void Game::playerLosesHealth()
 {
-    player_--;
+    --player_;
 }
