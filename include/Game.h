@@ -15,7 +15,7 @@
 class Game
 {
     public:
-        Game(int difficulty_level);
+        explicit Game(int difficulty_level);
         //Getters
         int getDifficultyLevel() const;
         //other functions
