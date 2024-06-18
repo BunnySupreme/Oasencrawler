@@ -96,13 +96,12 @@ bool Enemy::enemyReachedPlayer(int player_x_coordinate, int player_y_coordinate)
 void Enemy::moveEnemyRandomly(int map_size)
 {
     int map_limit = map_size-1;
-    int random_direction = 0;
-    bool need_to_try_again = false;
+
 
     while(1)
     {
-        need_to_try_again = false;
-        random_direction = rand() % 4;
+        int random_direction = rand() % 4;
+        bool need_to_try_again = false;
         switch (random_direction)
         {
         case 0:
