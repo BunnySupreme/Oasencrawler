@@ -171,7 +171,7 @@ void Game::gameMessage(const std::string& game_message)
     std::cout<<game_message;
 }
 
-void Game::errorMessage(std::string error_message)
+void Game::errorMessage(const std::string& error_message)
 {
     std::cout<<TEXT_SEPERATOR;
     std::cout<<error_message;

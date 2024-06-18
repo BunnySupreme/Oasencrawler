@@ -51,7 +51,7 @@ class Game
         // private functions
         void enemyCaptured();
         void gameMessage(const std::string& game_message);
-        void errorMessage(std::string error_message);
+        void errorMessage(const std::string& error_message);
         void incrementDifficultyLevel();
 };
 
