@@ -1,0 +1,230 @@
+main.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+vendor\doctest\doctest.h:1400:9: warning: Member variable 'Result::m_passed' is not initialized in the constructor. [uninitMemberVar]
+        Result() = default; // TODO: Why do we need this? (To remove NOLINT)
+        ^
+vendor\doctest\doctest.h:5970:9: warning: Member variable 'ConsoleReporter::hasLoggedCurrentTestStart' is not initialized in the constructor. [uninitMemberVar]
+        ConsoleReporter(const ContextOptions& co)
+        ^
+vendor\doctest\doctest.h:5970:9: warning: Member variable 'ConsoleReporter::currentSubcaseLevel' is not initialized in the constructor. [uninitMemberVar]
+        ConsoleReporter(const ContextOptions& co)
+        ^
+vendor\doctest\doctest.h:5970:9: warning: Member variable 'ConsoleReporter::tc' is not initialized in the constructor. [uninitMemberVar]
+        ConsoleReporter(const ContextOptions& co)
+        ^
+vendor\doctest\doctest.h:5974:9: warning: Member variable 'ConsoleReporter::hasLoggedCurrentTestStart' is not initialized in the constructor. [uninitMemberVar]
+        ConsoleReporter(const ContextOptions& co, std::ostream& ostr)
+        ^
+vendor\doctest\doctest.h:5974:9: warning: Member variable 'ConsoleReporter::currentSubcaseLevel' is not initialized in the constructor. [uninitMemberVar]
+        ConsoleReporter(const ContextOptions& co, std::ostream& ostr)
+        ^
+vendor\doctest\doctest.h:5974:9: warning: Member variable 'ConsoleReporter::tc' is not initialized in the constructor. [uninitMemberVar]
+        ConsoleReporter(const ContextOptions& co, std::ostream& ostr)
+        ^
+vendor\doctest\doctest.h:6789:5: warning: Member variable 'DiscardOStream::discardBuf' is not initialized in the constructor. [uninitMemberVar]
+    DiscardOStream()
+    ^
+vendor\doctest\doctest.h:6773:5: style: The class 'Anonymous0' does not declare a constructor although it has private member variables which likely require initialization. [noConstructor]
+    class : public std::streambuf
+    ^
+vendor\doctest\doctest.h:3439:5: style: The class 'MultiLaneAtomic < int >' does not declare a constructor although it has private member variables which likely require initialization. [noConstructor]
+    class MultiLaneAtomic
+    ^
+vendor\doctest\doctest.h:4309:9: performance: Variable 'm_type' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+        m_type        = type;
+        ^
+include\Game.h:18:9: style: Class 'Game' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        Game(int difficulty_level);
+        ^
+vendor\doctest\doctest.h:625:5: style: Class 'String' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    String(const char* in);
+    ^
+vendor\doctest\doctest.h:851:13: style: Class 'StringContains' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+            StringContains(const String& str) : content(str), isContains(false) { }
+            ^
+vendor\doctest\doctest.h:852:13: style: Class 'StringContains' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+            StringContains(Contains cntn) : content(static_cast<Contains&&>(cntn)), isContains(true) { }
+            ^
+vendor\doctest\doctest.h:1211:5: style: Struct 'Approx' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    Approx(double value);
+    ^
+vendor\doctest\doctest.h:1401:9: style: Struct 'Result' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        Result(bool passed, const String& decomposition = String());
+        ^
+vendor\doctest\doctest.h:1574:9: style: Struct 'ExpressionDecomposer' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        ExpressionDecomposer(assertType::Enum at);
+        ^
+vendor\doctest\doctest.h:1924:1: style: Struct 'test_suite' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(test_suite, const char*, "");
+^
+vendor\doctest\doctest.h:1925:1: style: Struct 'description' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(description, const char*, "");
+^
+vendor\doctest\doctest.h:1926:1: style: Struct 'skip' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(skip, bool, true);
+^
+vendor\doctest\doctest.h:1927:1: style: Struct 'no_breaks' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(no_breaks, bool, true);
+^
+vendor\doctest\doctest.h:1928:1: style: Struct 'no_output' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(no_output, bool, true);
+^
+vendor\doctest\doctest.h:1929:1: style: Struct 'timeout' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(timeout, double, 0);
+^
+vendor\doctest\doctest.h:1930:1: style: Struct 'may_fail' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(may_fail, bool, true);
+^
+vendor\doctest\doctest.h:1931:1: style: Struct 'should_fail' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(should_fail, bool, true);
+^
+vendor\doctest\doctest.h:1932:1: style: Struct 'expected_failures' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+DOCTEST_DEFINE_DECORATOR(expected_failures, int, 0);
+^
+vendor\doctest\doctest.h:5040:9: style: Class 'XmlEncode' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        XmlEncode( std::string const& str, ForWhat forWhat = ForTextNodes );
+        ^
+vendor\doctest\doctest.h:5076:9: style: Class 'XmlWriter' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        XmlWriter( std::ostream& os = std::cout );
+        ^
+vendor\doctest\doctest.h:5056:13: style: Class 'ScopedElement' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+            ScopedElement( XmlWriter* writer );
+            ^
+vendor\doctest\doctest.h:5424:9: style: Struct 'XmlReporter' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        XmlReporter(const ContextOptions& co)
+        ^
+vendor\doctest\doctest.h:5798:9: style: Struct 'JUnitReporter' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        JUnitReporter(const ContextOptions& co)
+        ^
+vendor\doctest\doctest.h:5970:9: style: Struct 'ConsoleReporter' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        ConsoleReporter(const ContextOptions& co)
+        ^
+vendor\doctest\doctest.h:1294:5: style: Struct 'IsNaN < float >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    IsNaN(F f, bool flip = false) : value(f), flipped(flip) { }
+    ^
+vendor\doctest\doctest.h:1294:5: style: Struct 'IsNaN < double >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    IsNaN(F f, bool flip = false) : value(f), flipped(flip) { }
+    ^
+vendor\doctest\doctest.h:1294:5: style: Struct 'IsNaN < long double >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    IsNaN(F f, bool flip = false) : value(f), flipped(flip) { }
+    ^
+vendor\doctest\doctest.h:3327:16: style: Condition '*ptr' is always true [knownConditionTrueFalse]
+            if(*ptr)
+               ^
+vendor\doctest\doctest.h:3324:21: note: Assignment 'x=1', assigned value is 1
+            int x = 1;
+                    ^
+vendor\doctest\doctest.h:3327:16: note: Condition '*ptr' is always true
+            if(*ptr)
+               ^
+vendor\doctest\doctest.h:3940:24: performance: Function parameter 'in' should be passed by const reference. [passedByValue]
+String toString(String in) { return in; }
+                       ^
+vendor\doctest\doctest.h:4803:29: style: Variable 'def' can be declared as reference to const [constVariableReference]
+                SignalDefs& def = signalDefs[i];
+                            ^
+vendor\doctest\doctest.h:5482:27: style: Variable 'curr' can be declared as reference to const [constVariableReference]
+                for(auto& curr : getListeners())
+                          ^
+vendor\doctest\doctest.h:5486:27: style: Variable 'curr' can be declared as reference to const [constVariableReference]
+                for(auto& curr : getReporters())
+                          ^
+vendor\doctest\doctest.h:6198:31: style: Variable 'curr' can be declared as reference to const [constVariableReference]
+                    for(auto& curr : reporters)
+                              ^
+vendor\doctest\doctest.h:3326:18: style: Variable 'ptr' can be declared as pointer to const [constVariablePointer]
+            auto ptr = reinterpret_cast<char*>(&x);
+                 ^
+vendor\doctest\doctest.h:5332:20: performance: Ineffective call of function 'substr' because a prefix of the string is assigned to itself. Use resize() or pop_back() instead. [uselessCallsSubstr]
+        m_indent = m_indent.substr( 0, m_indent.size()-2 );
+                   ^
+vendor\doctest\doctest.h:4183:21: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+            running = hash(running, hash(*it));
+                    ^
+vendor\doctest\doctest.h:4191:21: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+            running = hash(running, hash(sig));
+                    ^
+vendor\doctest\doctest.h:6876:19: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+        testArray.push_back(&curr);
+                  ^
+vendor\doctest\doctest.h:3469:24: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+                result += c.atomic.load(order);
+                       ^
+main.cpp:267:51: style: Variable 'player_has_no_items_in_beginning' is assigned a value that is never used. [unreadVariable]
+            bool player_has_no_items_in_beginning = game.getPlayerItems(AGILITY_ITEM) == 0 && game.getPlayerItems(STRENGTH_ITEM) == 0 && game.getPlayerItems(INTELLIGENCE_ITEM) == 0;
+                                                  ^
+vendor\doctest\doctest.h:4874:19: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+            g_cs->numAssertsCurrentTest_atomic++;
+                  ^
+vendor\doctest\doctest.h:4879:19: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+            g_cs->numAssertsFailedCurrentTest_atomic++;
+                  ^
+vendor\doctest\doctest.h:1004:67: warning: The struct 'has_insertion_operator' defines member variable with name 'value' also defined in its parent struct 'true_type'. [duplInheritedMember]
+    struct has_insertion_operator { static DOCTEST_CONSTEXPR bool value = has_global_insertion_operator<T>::value; };
+                                                                  ^
+vendor\doctest\doctest.h:952:58: note: Parent variable 'true_type::value'
+        struct true_type { static DOCTEST_CONSTEXPR bool value = true; };
+                                                         ^
+vendor\doctest\doctest.h:1004:67: note: Derived variable 'has_insertion_operator::value'
+    struct has_insertion_operator { static DOCTEST_CONSTEXPR bool value = has_global_insertion_operator<T>::value; };
+                                                                  ^
+vendor\doctest\doctest.h:4024:10: warning: Member variable 'Context::p' is not initialized in the constructor. [uninitMemberVar]
+Context::Context(int, const char* const*) {}
+         ^
+vendor\doctest\doctest.h:4434:17: performance: Variable 'stdoutHandle' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+                stdoutHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+                ^
+vendor\doctest\doctest.h:4393:40: style: Parameter 's' can be declared as reference to const [constParameterReference]
+    void color_to_stream(std::ostream& s, Color::Enum code) {
+                                       ^
+main.cpp:147:25: style: Variable 'enemyMoved' is assigned a value that is never used. [unreadVariable]
+        bool enemyMoved = (game.getEnemyXCoordinate() != 4 || game.getEnemyYCoordinate() != 4);
+                        ^
+main.cpp:208:32: style: Variable 'enemyChasedPlayer' is assigned a value that is never used. [unreadVariable]
+        bool enemyChasedPlayer = (game.getEnemyXCoordinate() == 3 || game.getEnemyYCoordinate() == 3);
+                               ^
+main.cpp:270:37: style: Variable 'player_got_an_item' is assigned a value that is never used. [unreadVariable]
+            bool player_got_an_item = game.getPlayerItems(AGILITY_ITEM)>0 || game.getPlayerItems(STRENGTH_ITEM)>0 || game.getPlayerItems(INTELLIGENCE_ITEM)>0;
+                                    ^
+main.cpp:283:30: style: Variable 'healthBefore' is assigned a value that is never used. [unreadVariable]
+            int healthBefore = game.getPlayerHealth();
+                             ^
+src\Enemy.cpp:99:9: style: The scope of the variable 'random_direction' can be reduced. [variableScope]
+    int random_direction = 0;
+        ^
+src\Enemy.cpp:100:10: style: The scope of the variable 'need_to_try_again' can be reduced. [variableScope]
+    bool need_to_try_again = false;
+         ^
+src\Enemy.cpp:99:26: style: Variable 'random_direction' is assigned a value that is never used. [unreadVariable]
+    int random_direction = 0;
+                         ^
+src\Enemy.cpp:100:28: style: Variable 'need_to_try_again' is assigned a value that is never used. [unreadVariable]
+    bool need_to_try_again = false;
+                           ^
+src\Game.cpp:174:37: performance: Function parameter 'error_message' should be passed by const reference. [passedByValue]
+void Game::errorMessage(std::string error_message)
+                                    ^
+src\Game.cpp:246:5: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+    player_--;
+    ^
+include\GameOther.h:9:9: style: Class 'GameOther' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        GameOther(int difficulty_level);
+        ^
+src\GameOther.cpp:18:41: performance: Function parameter 'game_message' should be passed by const reference. [passedByValue]
+void GameOther::gameMessage(std::string game_message)
+                                        ^
+src\GameOther.cpp:23:42: performance: Function parameter 'error_message' should be passed by const reference. [passedByValue]
+void GameOther::errorMessage(std::string error_message)
+                                         ^
+src\GameWorld.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+src\GameWorld.cpp:9:12: warning: Member variable 'GameWorld::map_' is not initialized in the constructor. [uninitMemberVar]
+GameWorld::GameWorld()
+           ^
+src\GameWorld.cpp:118:13: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+            return true;
+            ^
+nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
+
