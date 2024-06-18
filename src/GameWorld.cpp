@@ -90,54 +90,55 @@ void GameWorld::createMap(int player_x_coordinate, int player_y_coordinate)
 bool GameWorld::hitWall(char input, int player_x_coordinate, int player_y_coordinate)
 {
     testCoordinates(player_x_coordinate, player_y_coordinate);
+    bool result = false;
     //input already tested in Game::movePlayer function
     switch(input){
     case NORTH:
         if (player_y_coordinate <= 0)
         {
-            return true;
+            result = true;
         }
         else
         {
-            return false;
+            result =  false;
         }
         break;
     case SOUTH:
         if (player_y_coordinate >= max_y_coordinate_)
         {
-            return true;
+            result =  true;
         }
         else
         {
-            return false;
+            result =  false;
         }
         break;
     case WEST:
         if (player_x_coordinate <= 0)
         {
-            return true;
-            return true;
+            result =  true;
         }
         else
         {
-            return false;
+            result =  false;
         }
         break;
     case EAST:
         if (player_x_coordinate >= max_x_coordinate_)
         {
-            return true;
+            result =  true;
         }
         else
         {
-            return false;
+            result =  false;
         }
         break;
     default:
         std::cout << "\nError in hitWall Function! Invalid input! Game continues.\n";
-        return false;
+        result =  false;
 
     }
+    return result;
 }
 
 
